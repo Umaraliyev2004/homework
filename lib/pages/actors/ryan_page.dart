@@ -12,6 +12,12 @@ class RyanPage extends StatelessWidget {
           style: TextStyle(fontSize: 24),
         ),
         backgroundColor: const Color.fromARGB(255, 12, 5, 143),
+        shape: const RoundedRectangleBorder(
+          borderRadius: BorderRadius.only(
+            bottomLeft: Radius.circular(30),
+            bottomRight: Radius.circular(30),
+          ),
+        ),
       ),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
