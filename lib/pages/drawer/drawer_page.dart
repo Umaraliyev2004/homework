@@ -54,9 +54,6 @@ class DrawerPage extends StatelessWidget {
             ),
           ),
         ),
-        Image.network(
-          "https://www.istockphoto.com/photo/business-man-pushing-large-stone-up-to-hill-business-heavy-tasks-and-problems-concept-gm825383494-133865749",
-        ),
       ],
     );
   }
