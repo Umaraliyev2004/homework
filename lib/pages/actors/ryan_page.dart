@@ -21,110 +21,85 @@ class RyanPage extends StatelessWidget {
       ),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
-        child: Column(
+        child: GridView(
+          gridDelegate: const  SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: 3,
+            crossAxisSpacing: 8,
+            mainAxisSpacing: 8,
+          ),
           children: [
-            Row(
-              children: [
-                Expanded(
-                  child: Image.asset(
-                    "assets/images/ryan1.jpg",
-                    height: 200,
-                    width: 200,
-                  ),
-                ),
-                const SizedBox(
-                  width: 4,
-                ),
-                Expanded(
-                  child: Image.asset(
-                    "assets/images/ryan2.jpg",
-                    height: 200,
-                    width: 200,
-                  ),
-                ),
-                const SizedBox(
-                  width: 3,
-                ),
-                Expanded(
-                  child: Image.asset(
-                    "assets/images/ryan3.jpg",
-                    height: 200,
-                    width: 200,
-                  ),
-                ),
-              ],
+             Container(
+            decoration: const BoxDecoration(
+              image: DecorationImage(
+                fit: BoxFit.cover,
+                image: AssetImage("assets/images/ryan1.jpg")
+              ),
             ),
-            const SizedBox(
-              height: 4,
+          ),
+          Container(
+            decoration: const BoxDecoration(
+              image: DecorationImage(
+                fit: BoxFit.cover,
+                image: AssetImage("assets/images/ryan2.jpg")
+              ),
             ),
-            Row(
-              children: [
-                Expanded(
-                  child: Image.asset(
-                    "assets/images/ryan4.jpg",
-                    height: 200,
-                    width: 200,
-                  ),
-                ),
-                const SizedBox(
-                  width: 4,
-                ),
-                Expanded(
-                  child: Image.asset(
-                    "assets/images/ryan5.jpg",
-                    height: 200,
-                    width: 200,
-                  ),
-                ),
-                const SizedBox(
-                  width: 3,
-                ),
-                Expanded(
-                  child: Image.asset(
-                    "assets/images/ryan6.jpg",
-                    height: 200,
-                    width: 200,
-                  ),
-                ),
-              ],
+          ),
+          Container(
+            decoration: const BoxDecoration(
+              image: DecorationImage(
+                fit: BoxFit.cover,
+                image: AssetImage("assets/images/ryan3.jpg")
+              ),
             ),
-            const SizedBox(
-              height: 4,
+          ),
+          Container(
+            decoration: const BoxDecoration(
+              image: DecorationImage(
+                fit: BoxFit.cover,
+                image: AssetImage("assets/images/ryan4.jpg")
+              ),
             ),
-            Row(
-              children: [
-                Expanded(
-                  child: Image.asset(
-                    "assets/images/ryan7.jpg",
-                    height: 200,
-                    width: 200,
-                  ),
-                ),
-                const SizedBox(
-                  width: 4,
-                ),
-                Expanded(
-                  child: Image.asset(
-                    "assets/images/ryan8.jpg",
-                    height: 200,
-                    width: 200,
-                  ),
-                ),
-                const SizedBox(
-                  width: 3,
-                ),
-                Expanded(
-                  child: Image.asset(
-                    "assets/images/ryan9.jpg",
-                    height: 200,
-                    width: 200,
-                  ),
-                ),
-              ],
+          ),
+          Container(
+            decoration: const BoxDecoration(
+              image: DecorationImage(
+                fit: BoxFit.cover,
+                image: AssetImage("assets/images/ryan5.jpg")
+              ),
             ),
-            const SizedBox(
-              height: 4,
+          ),
+          Container(
+            decoration: const BoxDecoration(
+              image: DecorationImage(
+                fit: BoxFit.cover,
+                image: AssetImage("assets/images/ryan6.jpg")
+              ),
             ),
+          ),
+          Container(
+            decoration: const BoxDecoration(
+              image: DecorationImage(
+                fit: BoxFit.cover,
+                image: AssetImage("assets/images/ryan7.jpg")
+              ),
+            ),
+          ),
+          Container(
+            decoration: const BoxDecoration(
+              image: DecorationImage(
+                fit: BoxFit.cover,
+                image: AssetImage("assets/images/ryan8.jpg")
+              ),
+            ),
+          ),
+          Container(
+            decoration: const BoxDecoration(
+              image: DecorationImage(
+                fit: BoxFit.cover,
+                image: AssetImage("assets/images/ryan9.jpg")
+              ),
+            ),
+          ),
           ],
         ),
       ),
